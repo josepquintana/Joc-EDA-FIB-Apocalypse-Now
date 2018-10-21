@@ -1,0 +1,39 @@
+From your player class you can call functions to:
+
+* access the board state
+				
+	State.hh	-> /**
+					* Contains a class to store the current state of a game.
+					*/
+
+* command your units
+	
+	Player.hh	-> /**
+					* Abstract base class for players.
+					* *
+					* This class uses multiple inheritance from Info and Action,
+					* so that their public operations can been used from within Player.
+					*
+					* In order to create new players, inherit from this class and register them.
+					* See for example AINull.cc and AIDemo.cc.
+					*/
+
+					
+					
+	Structs.hh 	-> /** 
+					* Contains the definition of some constants,
+					* the Position struct,
+					* the Post struct,
+					* and the Data struct.
+					*/
+					
+	Random.hh	-> /**
+					* Defines a random generator.
+					* Function: "int random (int l, int u)";
+					*/
+		
+	Settings.hh	-> /**
+					* Contains a class to store all the game settings that do not change
+					* during a game, except the names of the players.
+					* Contains Game Parameters such as: NUM_PLAYERS, MAX, FOREST_DAMAGE
+					*/
